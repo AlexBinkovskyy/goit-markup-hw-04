@@ -296,15 +296,21 @@ header .container {
   gap: var(--listed-gap);
 }
 
+.benefits.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .benefits-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   width: calc(
     (100% - var(--listed-gap) * (var(--listeditems) - 1)) / var(--listeditems)
   );
-}
+ }
 
-/* .benefits-item .benefits-icons {
-  
-} */
 
 .benefits-icons {
   position: relative;
@@ -312,7 +318,7 @@ header .container {
   background-color: var(--cloud);
   border-radius: 4px;
   padding: 24px 100px;
-  margin-bottom: 8px;
+  
 }
 
 .benefits-icon {
@@ -408,9 +414,7 @@ header .container {
   background-color: var(--iris);
   align-items: center;
   justify-content: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transform-style: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-settings);
 }
 
 .team-card-content .link:hover,
@@ -458,7 +462,7 @@ header .container {
   border-radius: 4px;
   border: 1px solid var(--lightslate);
   padding: 16px 32px;
-  transition: color var(--transition-settings);
+  transition: border-color var(--transition-settings);
   }
   
   .costumers-logo {
@@ -535,9 +539,6 @@ header .container {
   background-color: var(--green);
 }
 
-
-.social-logo {
-}
 
 /* PORTFOLIO */
 /* PORTFOLIO */
