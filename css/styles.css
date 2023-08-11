@@ -37,6 +37,7 @@ button {
   --ocean: #404bbf;
   --white: #ffffff;
   --cornflower: #e7e9fc;
+  --lightslate: #8e8f99;
   --listed-gap: 24px;
 }
 
@@ -157,15 +158,16 @@ header .container {
   align-items: center;
 }
 
-.nav-box .list {
-  display: flex;
-  gap: 40px;
-}
-
 .nav-box .body-medium {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  position: relative;
+}
+
+.list.nav-box-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address {
@@ -180,8 +182,8 @@ header .container {
   margin-right: 40px;
 }
 
-.list .link:hover,
-.list .link:focus {
+.nav-box-list .link:hover,
+.nav-box-list .link:focus {
   color: var(--ocean);
 }
 
@@ -199,18 +201,25 @@ header .container {
 .nav-box-list .link:hover::after,
 .nav-box-list .link:focus::after {
   content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background: var(--ocean);
-  display: block;
 }
 
-/* .nav-box-list .body-medium:hover,
-.nav-box-list .body-medium:focus {
-  padding-top: 24px;
-  padding-bottom: 24px;
-} */
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--ocean);
+}
 
 /*  */
 /*  */
@@ -410,6 +419,42 @@ header .container {
   fill: var(--cloud);
 }
 
+/**
+  |============================
+  | Costumers section
+  |============================
+*/
+
+.costumers .title-second {
+  margin-bottom: 72px;
+}
+
+.costumers {
+  padding: 120px 0 120px 0;
+}
+
+.costumers .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--listed-gap);
+  --listeditems: 6;
+}
+.costumers-list-item {
+  display: flex;
+  width: calc(
+    (100% - var(--listed-gap) * (var(--listeditems) - 1)) / var(--listeditems)
+  );
+  height: 88px;
+}
+.costumers-list-item .link {
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  padding: 16px 32px;
+}
+.costumers-logo {
+  fill: var(--lightslate);
+}
+
 /*  */
 /*  */
 /* Footer */
@@ -434,6 +479,35 @@ header .container {
 .footer .link {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer .body-medium {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer .container {
+  display: flex;
+  gap: 120px;
+}
+
+.footer .list {
+  display: flex;
+  gap: 16px;
+}
+
+.team-socials-logo {
+}
+
+.footer .footer-socials {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  padding: 8px;
+}
+
+.social-logo {
 }
 
 /* PORTFOLIO */
