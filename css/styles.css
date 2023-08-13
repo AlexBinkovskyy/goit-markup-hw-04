@@ -518,7 +518,6 @@ header .container {
 
 .footer .link {
   display: inline-block;
-  height: 100%;
   margin-bottom: 16px;
 }
 
@@ -541,12 +540,20 @@ header .container {
   gap: 16px;
 }
 
+.team-socials-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.team-socials-logo .link {
+  height: 100%;
+  width: 100%;
+}
+
 .footer .footer-socials {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
   padding: 8px;
