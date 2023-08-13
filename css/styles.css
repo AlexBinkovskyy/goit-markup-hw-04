@@ -576,6 +576,7 @@ header .container {
   background-color: var(--dairy);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: tranform var(--transition-settings);
 }
 
 .backdrop .modal-btn {
@@ -593,13 +594,13 @@ header .container {
   border-color: rgba(0, 0, 0, 0.1);
   background-color: var(--cornflower);
   padding: 0x;
-  transition: background-color var(--transition-settings);
+  transition: background-color var(--transition-settings),
+    border var(--transition-settings);
 }
 
 .backdrop .modal-btn:hover,
 .backdrop .modal-btn:focus {
   background-color: var(--ocean);
-  border: none;
 }
 
 .backdrop.is-hidden {
@@ -610,6 +611,12 @@ header .container {
 
 .backdrop .modal-btn-ico {
   fill: black;
+  transition: fill var(--transition-settings);
+}
+
+.backdrop .modal-btn:hover .modal-btn-ico,
+.backdrop .modal-btn:focus .modal-btn-ico {
+  fill: var(--main-bkgrnd-color);
 }
 
 /* PORTFOLIO */
