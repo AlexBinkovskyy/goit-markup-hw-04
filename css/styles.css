@@ -222,6 +222,10 @@ header .container {
   background: var(--ocean);
 }
 
+.nav-box-list .link.current {
+  color: var(--ocean);
+}
+
 .current::after {
   content: "";
   display: block;
@@ -231,7 +235,7 @@ header .container {
   height: 4px;
   border-radius: 2px;
   background: var(--ocean);
-}
+}  
 
 /*  */
 /*  */
