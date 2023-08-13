@@ -167,13 +167,18 @@ header .container {
   align-items: center;
 }
 
-.header .link.body-medium {
+.nav-box-list .link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #404bbf;
+  color: var(--navyblue);
   position: relative;
   transition: color var(--transition-settings);
+}
+
+.nav-box-list .link:hover,
+.nav-box-list .link:focus {
+  color: var(--ocean);
 }
 
 .list.nav-box-list {
@@ -191,11 +196,6 @@ header .container {
 
 .address-list .list-item:first-child {
   margin-right: 40px;
-}
-
-.nav-box-list .link:hover,
-.nav-box-list .link:focus {
-  color: var(--ocean);
 }
 
 .link.adr-item {
