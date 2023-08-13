@@ -24,7 +24,6 @@ button {
 
 .link {
   text-decoration: none;
-  color: var(--navyblue);
 }
 
 /* VARIABLES */
@@ -140,7 +139,7 @@ header .container {
 }
 
 /* Logo */
-.logo {
+.header .logo {
   color: var(--iris);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -154,7 +153,7 @@ header .container {
   margin-right: 76px;
 }
 
-.logo-dark {
+.header .logo-dark {
   color: var(--navyblue);
 }
 
@@ -168,10 +167,11 @@ header .container {
   align-items: center;
 }
 
-.nav-box .link {
+.header .link.body-medium {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  color: var(--navyblue);
   position: relative;
   transition: color var(--transition-settings);
 }
@@ -318,19 +318,13 @@ header .container {
 }
 
 .benefits-icons {
-  position: relative;
   height: 112px;
   background-color: var(--cloud);
   border-radius: 4px;
   padding: 24px 100px;
 }
 
-.benefits-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 /*  */
 /*  */
@@ -506,6 +500,17 @@ header .container {
   background-color: var(--navyblue);
   padding: 100px 0;
 }
+
+.footer .link.logo {
+  color: var(--iris);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 
 .footer-text {
   width: 264px;
