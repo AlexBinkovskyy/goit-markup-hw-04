@@ -562,7 +562,7 @@ header .container {
   transition: opacity var(--transition-settings), visibility var(--transition-settings);
 }
 
-.modal {
+.backdrop .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -575,11 +575,11 @@ header .container {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 
-.modal-btn-box {
+.backdrop .modal-btn-box {
   position: relative;
 }
 
-.modal-btn {
+.backdrop .modal-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,7 +603,7 @@ header .container {
   visibility: hidden;
 }
 
-.modal-btn-ico {
+.backdrop .modal-btn-ico {
   fill: black;
 }
 
