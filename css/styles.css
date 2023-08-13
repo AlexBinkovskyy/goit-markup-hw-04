@@ -171,7 +171,7 @@ header .container {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: var(--navyblue);
+  color: #404bbf;
   position: relative;
   transition: color var(--transition-settings);
 }
